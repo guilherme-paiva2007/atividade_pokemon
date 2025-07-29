@@ -1,0 +1,35 @@
+@import url("./styles.css");
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    height: max-content;
+    height: 100%;
+    padding: 56px calc(56px + 7.5%);
+}
+
+.container {
+    border-radius: 16px;
+    background-color: var(--color-light);
+    height: 100%;
+}
+
+.container-content {
+    padding: 24px;
+}
+
+.search-container {
+    padding: 24px;
+}
+
+.search-container > input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 16px;
+}

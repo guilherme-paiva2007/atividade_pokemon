@@ -24,12 +24,18 @@ header {
     justify-content: center;
 }
 
+#logo-nav {
+    width: 55px;
+    height: 55px;
+}
+
 header a {
     color: white;
 }
 
 header > nav {
     width: 75%;
+    display: flex;
 }
 
 header > nav > ul {

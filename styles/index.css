@@ -23,13 +23,120 @@ main {
     padding: 24px;
 }
 
-.search-container {
-    padding: 24px;
-}
-
-.search-container > input {
+.search-container > .input-container {
     width: 100%;
     box-sizing: border-box;
     padding: 8px;
     border-radius: 16px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-container > .input-container > input {
+    width: calc(100% - 56px);
+}
+
+.table-content {
+    /* padding: 0 8px; */
+    margin-top: 24px;
+    border: 2px solid white;
+    border-radius: 16px;
+    overflow: hidden;
+    * {
+        color: white
+    }
+    table, tr, td, th {
+        /* border: white 1px solid; */
+        border-collapse: collapse;
+        /* word-break: break-all; */
+        word-wrap: break-word;
+        border-radius: 16px;
+    }
+
+    tbody {
+        overflow-y: scroll;
+    }
+
+    td, th {
+        border: 2px solid white;
+        padding: 4px;
+    }
+
+    thead tr th {
+        border-top: none;
+    }
+
+    tbody tr:last-child td {
+        border-bottom: none;
+    }
+
+    td:first-child, th:first-child {
+        border-left: none;
+    }
+
+    td:last-child, th:last-child {
+        border-right: none;
+    }
+}
+
+#table-head > th:nth-child(1) {
+    width: 20%;
+}
+
+#table-head > th:nth-child(2) {
+    width: 8%;
+}
+
+#table-head > th:nth-child(3) {
+    width: 20%;
+}
+
+#table-head > th:nth-child(4) {
+    width: 8%;
+}
+
+td:nth-child(4)::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    transform: translate(4px, 4px);
+    background-image: url("../assets/svgs/heart.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#table-head > th:nth-child(5) {
+    width: 8%;
+}
+
+td:nth-child(5)::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    transform: translate(4px, 4px);
+    background-image: url("../assets/svgs/sword.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#table-head > th:nth-child(6) {
+    width: 8%;
+}
+
+td:nth-child(6)::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    transform: translate(4px, 4px);
+    background-image: url("../assets/svgs/shield.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#table-head > th:nth-child(7) {
+    width: 20%;
 }

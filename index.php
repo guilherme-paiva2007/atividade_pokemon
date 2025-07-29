@@ -19,7 +19,41 @@
             <div class="container">
                 <div class="container-content">
                     <div class="search-container">
-                        <input type="text" id="input-search-pokemon">
+                        <div class="input-container">
+                            <input type="text" id="input-search-pokemon">
+                            <div style="
+                                padding: 0 8px;
+                                display: inline;
+                            ">
+                                <img src="./assets/svgs/magnifying-glass.svg" alt="Lupa de pesquisa" class="small-icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-content">
+                        <table>
+                            <thead>
+                                <tr id="table-head">
+                                    <th>Nome</th>
+                                    <th>Tipo</th>
+                                    <th>Registro</th>
+                                    <th>HP</th>
+                                    <th>Ataque</th>
+                                    <th>Defesa</th>
+                                    <th>Observações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Pokemons</td>
+                                    <td>Tipos</td>
+                                    <td>99/99/9999 - 99h99</td>
+                                    <td>2323</td>
+                                    <td>12</td>
+                                    <td>9999</td>
+                                    <td>Observ açõesObs ervaçaçõ esObser vações</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

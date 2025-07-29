@@ -1,0 +1,111 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    --color-light: #60abb9;
+    --color: #106f81;
+    --color-dark: #0c465a;
+}
+
+body {
+    background-image: url('../assets/imgs/poke-back.png');
+    background-size: cover;         /* Faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat;   /* Não repete a imagem */
+    background-position: center;    /* Centraliza a imagem */
+    background-attachment: fixed;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2 {
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    border-radius: 8px;
+    background-color: var(--color-light);
+    margin: 20px 0 20px;
+}
+
+.campos {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 15px;
+    gap: 5px;
+}
+
+.campos input {
+    height: 20px;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid var(--color);
+}
+
+.campos label {
+    font-weight: 600;
+    color: white;
+}
+
+select {
+    height: 35px;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid var(--color);
+    background-color: white;
+}
+
+.status {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.status input {
+    margin-bottom: 15px;
+    height: 20px;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid var(--color);
+}
+
+.status label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: white;
+}
+
+textarea {
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid var(--color);
+}
+
+button {
+    margin-bottom: 20px;
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-dark);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--color);
+    cursor: pointer;
+}

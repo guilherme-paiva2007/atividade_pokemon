@@ -21,12 +21,14 @@ if (isset($_GET['search'])) {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/imgs/poke-icon.png" type="image/x-icon">
         <title>Início - PokeLost</title>
         <link rel="stylesheet" href="./styles/index.css">
     </head>
     <body>
         <header>
             <nav>
+                <img src="assets/imgs/poke-icon.png" alt="" id="logo-nav">
                 <ul>
                     <li><a href="./">Início</a></li>
                     <li><a href="./cadastrar.php">Cadastrar</a></li>

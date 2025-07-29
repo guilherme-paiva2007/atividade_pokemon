@@ -91,6 +91,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
 
             <button type="submit">Enviar</button>
+            <a href="index.php">Voltar para o início</a>
         </form>
     </body>
 </html>
